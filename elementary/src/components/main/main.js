@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Task3 from '../task3';
+import Task4 from '../task4';
 
 
 export default class extends Component {
@@ -8,7 +9,7 @@ export default class extends Component {
 
     return (
       <div className="elementary-task">
-        <Task3/>
+        <Task4 />
       </div>
     );
   }

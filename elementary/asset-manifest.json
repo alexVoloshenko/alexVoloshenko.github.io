@@ -1,13 +1,13 @@
 {
   "main.css": "/elementary/static/css/main.077abab9.chunk.css",
-  "main.js": "/elementary/static/js/main.032822bc.chunk.js",
-  "main.js.map": "/elementary/static/js/main.032822bc.chunk.js.map",
+  "main.js": "/elementary/static/js/main.be401d1b.chunk.js",
+  "main.js.map": "/elementary/static/js/main.be401d1b.chunk.js.map",
   "runtime~main.js": "/elementary/static/js/runtime~main.288270d3.js",
   "runtime~main.js.map": "/elementary/static/js/runtime~main.288270d3.js.map",
-  "static/js/2.78ba3352.chunk.js": "/elementary/static/js/2.78ba3352.chunk.js",
-  "static/js/2.78ba3352.chunk.js.map": "/elementary/static/js/2.78ba3352.chunk.js.map",
+  "static/js/2.05fa6133.chunk.js": "/elementary/static/js/2.05fa6133.chunk.js",
+  "static/js/2.05fa6133.chunk.js.map": "/elementary/static/js/2.05fa6133.chunk.js.map",
   "index.html": "/elementary/index.html",
-  "precache-manifest.4d41f93a680fb66c01b59ca9323328ca.js": "/elementary/precache-manifest.4d41f93a680fb66c01b59ca9323328ca.js",
+  "precache-manifest.3325029f754101346578363416e0b07d.js": "/elementary/precache-manifest.3325029f754101346578363416e0b07d.js",
   "service-worker.js": "/elementary/service-worker.js",
   "static/css/main.077abab9.chunk.css.map": "/elementary/static/css/main.077abab9.chunk.css.map"
 }
