@@ -1,1 +1,192 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/elementary/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/elementary/manifest.json"/><title>React App</title><link href="/elementary/static/css/main.077abab9.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(i){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],l=0,f=[];l<n.length;l++)t=n[l],p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(i[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=l(l.s=t[0]))}return e}var t={},p={1:0},c=[];function l(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return i[e].call(r.exports,r,r.exports,l),r.l=!0,r.exports}l.m=i,l.c=t,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(r,e){if(1&e&&(r=l(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)l.d(t,n,function(e){return r[e]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/elementary/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/elementary/static/js/2.05fa6133.chunk.js"></script><script src="/elementary/static/js/main.be401d1b.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <img src="img/logo.svg" alt="SoftServe">
+</header>
+<div class="main">
+    <div class="task1 container">
+        <h2 class="task-header">Task1, Create chess board.</h2>
+        <form name="task1-form">
+            <label>
+                <span>Height:</span>
+                <input class="text-input" type="text" name="height"/><br/>
+            </label>
+            <label>
+                <span>Width: </span>
+                <input class="text-input" type="text" name="width"/><br/>
+            </label>
+            <label>
+                <span>Sign: </span>
+                <input class="text-input" type="text" name="symbol"/><br>
+            </label>
+            <button class="button" data-function-name="startChessBoard">Result</button>
+        </form>
+        <div class="result0 result-container"></div>
+    </div>
+    <div class="task2 container">
+        <h2 class="task-header">Task2, Envelope analysis.</h2>
+        <form name="task2-form">
+            <span>First envelop</span><br>
+            <label>
+                <span>Height:</span>
+                <input class="text-input" type="text" name="height1"/><br/>
+            </label>
+            <label>
+                <span>Width: </span>
+                <input class="text-input" type="text" name="width1"/><br/>
+            </label>
+            <span>Second envelop</span><br>
+            <label>
+                <span>Height:</span>
+                <input class="text-input" type="text" name="height2"/><br/>
+            </label>
+            <label>
+                <span>Width: </span>
+                <input class="text-input" type="text" name="width2"/><br/>
+            </label>
+
+            <button class="button" data-function-name="compaireEnvelopes">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <div class="task3 container">
+        <h2 class="task-header">Task3, sort rectangels.</h2>
+        <form name="task2-form">
+            <span>First envelop</span><br>
+            <label>
+                <span>Height:</span>
+                <input class="text-input" type="text" name="height1"/><br/>
+            </label>
+            <label>
+                <span>Width: </span>
+                <input class="text-input" type="text" name="width1"/><br/>
+            </label>
+            <span>Second envelop</span><br>
+            <label>
+                <span>Height:</span>
+                <input class="text-input" type="text" name="height2"/><br/>
+            </label>
+            <label>
+                <span>Width: </span>
+                <input class="text-input" type="text" name="width2"/><br/>
+            </label>
+
+            <button class="button" data-function-name="startChessBoard">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <div class="task4 container">
+        <h2 class="task-header">Task4, find palindrome.</h2>
+        <form name="task4-form">
+            <label>
+                <span>Number:</span>
+                <input class="text-input" type="text" name="number"/><br/>
+            </label>
+
+            <button class="button" data-function-name="findPalindrome">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <div class="task5 container">
+        <h2 class="task-header">Task5, lucky tickets.</h2>
+        <form name="task2-form">
+
+            <label>
+                <span>Min:</span>
+                <input class="text-input" type="text" name="min"/><br/>
+            </label>
+            <label>
+                <span>Max: </span>
+                <input class="text-input" type="text" name="max"/><br/>
+            </label>
+
+
+            <button class="button" data-function-name="createTickets">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <div class="task6 container">
+        <h2 class="task-header">Task6, numeric sequence.</h2>
+        <form name="task6-form">
+            <label>
+                <span>Length:</span>
+                <input class="text-input" type="text" name="len"/><br/>
+            </label>
+            <label>
+                <span>Min: </span>
+                <input class="text-input" type="text" name="min"/><br/>
+            </label>
+            <button class="button" data-function-name="createNumericSequense">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <div class="task7 container">
+        <h2 class="task-header">Task7, fibonacci.</h2>
+        <form name="task7-form">
+
+            <label>
+                <span>Min:</span>
+                <input class="text-input" type="text" name="min"/><br/>
+            </label>
+            <label>
+                <span>Max: </span>
+                <input class="text-input" type="text" name="max"/><br/>
+            </label>
+            <label>
+                <span>Length: </span>
+                <input class="text-input" type="text" name="len"/><br/>
+            </label>
+            <button class="button" data-function-name="createFibo">Result</button>
+        </form>
+        <div class="result"></div>
+    </div>
+</div>
+
+<ul id="home-nav" class="home-nav-items">
+    <li class="home-nav-item" id="task1-link" data-index-number="0">
+        <a class="home-nav-link" href="#top">01
+            <span class="home-nav-title">Create chessboard</span>
+        </a>
+    </li>
+    <li class="home-nav-item" id="task2-link" data-index-number="1">
+        <a class="home-nav-link" href="#careers">02
+            <span class="home-nav-title">Envelope analysis</span>
+        </a>
+    </li>
+    <li class="home-nav-item" id="task3-link" data-index-number="2">
+        <a class="home-nav-link" href="#journey-descr">03
+            <span class="home-nav-title">Triangles sorting</span>
+        </a>
+    </li>
+    <li class="home-nav-item" data-index-number="3">
+        <a class="home-nav-link" href="#journey">04
+            <span class="home-nav-title">Find palindrome</span>
+        </a></li>
+    <li class="home-nav-item" data-index-number="4">
+        <a class="home-nav-link" href="#resources">05
+            <span class="home-nav-title">Lucky tickets</span>
+        </a>
+    </li>
+    <li class="home-nav-item" data-index-number="5">
+        <a class="home-nav-link" href="#clients">06
+            <span class="home-nav-title">Numeric sequence</span>
+        </a>
+    </li>
+    <li class="home-nav-item" data-index-number="6">
+        <a class="home-nav-link" href="#industries">07
+            <span class="home-nav-title">Fibonacci numbers</span>
+        </a>
+    </li>
+</ul>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
