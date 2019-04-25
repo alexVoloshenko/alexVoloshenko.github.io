@@ -1,8 +1,8 @@
 import findPalindrome from './components/Task4/FindPalindrome.js';
 import sortTriangles from './components/Task3/SortTriangles.js';
 import startChessBoard from './components/Task1/CreateChessBoard.js';
-import {envelops, compareEnvelopes} from './components/Task2/CompareEnvelopes.js';
-import checkTickets from './components/Task2/CompareEnvelopes.js';
+// import {envelops, compareEnvelopes} from './components/Task2/CompareEnvelopes.js';
+// import checkTickets from './components/Task2/CompareEnvelopes.js';
 import createNumericSequense from './components/Task6/NumericSequence.js';
 import createFibo from './components/Task7/FibonacciNumbers.js';
 
@@ -28,8 +28,8 @@ function runTaskFunction(event) {
       break;
     case 'sortTriangles' : sortTriangles();
       break;
-    case 'compareEnvelopes' : compareEnvelopes();
-      break;
+    // case 'compareEnvelopes' : compareEnvelopes();
+    //   break;
     case 'checkTickets' : checkTickets();
       break;
     case 'createNumericSequense' : createNumericSequense();
