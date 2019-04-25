@@ -54,47 +54,51 @@
                 <input class="text-input" type="text" name="width2"/><br/>
             </label>
 
-            <button class="button" data-function-name="compaireEnvelopes">Result</button>
+            <button class="button" data-function-name="compareEnvelopes">Result</button>
         </form>
         <div class="result"></div>
     </div>
     <div class="task3 container">
         <h2 class="task-header">Task3, sort rectangels.</h2>
         <form name="task2-form">
-            <span>First envelop</span><br>
+            <span>Triangle</span><br>
             <label>
-                <span>Height:</span>
-                <input class="text-input" type="text" name="height1"/><br/>
+                <span>Name</span>
+                <input class="triangle-name" type="text" name="tiangle-name"/><br/>
             </label>
             <label>
-                <span>Width: </span>
-                <input class="text-input" type="text" name="width1"/><br/>
-            </label>
-            <span>Second envelop</span><br>
-            <label>
-                <span>Height:</span>
-                <input class="text-input" type="text" name="height2"/><br/>
+                <span>First side</span>
+                <input class="triangle-side" type="text" name="tiangle-side"/><br/>
             </label>
             <label>
-                <span>Width: </span>
-                <input class="text-input" type="text" name="width2"/><br/>
+                <span>Second side </span>
+                <input class="triangle-side" type="text" name="tiangle-side"/><br/>
             </label>
-
-            <button class="button" data-function-name="startChessBoard">Result</button>
+            <label>
+                <span>Third side</span>
+                <input class="triangle-side" type="text" name="tiangle-side"/><br/>
+            </label>
+            <span class="error task3-error"></span><br>
+            <span class="count-of-triangles"></span><br>
+            <button class="add-triangle" name="add-triangle">add new triangle</button>
+            <button class="button" data-function-name="sortTriangles">Result</button>
         </form>
-        <div class="result"></div>
+        <div class="result result-triangle"></div>
     </div>
     <div class="task4 container">
         <h2 class="task-header">Task4, find palindrome.</h2>
         <form name="task4-form">
             <label>
                 <span>Number:</span>
-                <input class="text-input" type="text" name="number"/><br/>
+                <input class="text-input" type="text" name="number" maxlength="50"
+                /><br/>
             </label>
 
+            <span class="error task4-error"></span><br>
             <button class="button" data-function-name="findPalindrome">Result</button>
         </form>
-        <div class="result"></div>
+
+        <div class="result result--palindrome"></div>
     </div>
     <div class="task5 container">
         <h2 class="task-header">Task5, lucky tickets.</h2>
@@ -110,7 +114,7 @@
             </label>
 
 
-            <button class="button" data-function-name="createTickets">Result</button>
+            <button class="button" data-function-name="checkTickets">Result</button>
         </form>
         <div class="result"></div>
     </div>
@@ -187,6 +191,6 @@
         </a>
     </li>
 </ul>
-<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/main.js" defer></script>
 </body>
 </html>
