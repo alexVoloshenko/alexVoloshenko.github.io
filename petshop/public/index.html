@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<div class="pets">
+    <form action="http://localhost:5000/check" method="POST" class="form" name="pets">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="price" placeholder="price">
+        <input type="text" name="color" placeholder="color">
+        <select id="pet-select" name="type">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="hamster">Hamster</option>
+        </select>
+        <label>
+            isFluffy
+            <input type="checkbox" name="isFluffy">
+        </label>
+    </form>
+    <button id="button">Send data</button>
+</div>
+
+<button class="show-cats">show cats</button>
+<button class="show-pets-average">show pets with price greater than average</button>
+<button class="show-fluffy-or-white">show fluffy or white pets</button>
+<script src="script.js"></script>
+</body>
+</html>
