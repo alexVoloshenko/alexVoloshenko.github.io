@@ -1,0 +1,56 @@
+.pet {
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+
+}
+
+.pet * {
+    width: 100px;
+    height: 30px;
+    background: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.pet a {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.pet-shop > div {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 100px;
+}
+.cart .pet__type{
+    display: none;
+}
+
+.cart .pet__color{
+    display: none;
+}
+
+.cart .pet__isFluffy{
+    display: none;
+}
+
+.cart .button {
+    display: none;
+}
+
