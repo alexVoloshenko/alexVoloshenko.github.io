@@ -1,6 +1,6 @@
 async function getFetch(element) {
     const response = await fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
-    const result = await response.json();
+    let result = await response.json();
     if (result.length) {
         result = result.slice(0, 3)
         result.forEach(item => {
