@@ -6,7 +6,7 @@ async function getFetch(element) {
         result.forEach(item => {
             let img = document.createElement('img')
             img.src = item.image_url
-            element.appendChild(img)
+            element.target.appendChild(img)
         })
     }
     // let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
