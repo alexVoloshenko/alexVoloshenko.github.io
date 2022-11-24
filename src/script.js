@@ -6,7 +6,6 @@ function getFetch(url) {
         .then((data) => {
             console.log(data);
         });
-        element
     return res;
 }
 function debounce(func, timeout = 300){
