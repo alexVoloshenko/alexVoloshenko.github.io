@@ -19,7 +19,7 @@ function debounce(func, timeout = 300){
 function getPhotos (element) {
     debounce(getFetch)
     console.log(element)
-    element.removeEventListener('scroll', getPhotos)
+    element.target.removeEventListener('scroll', getPhotos)
 }
 const containers = document.getElementsByClassName('offer-card__img-container--test')
 containers.forEach(element => {
