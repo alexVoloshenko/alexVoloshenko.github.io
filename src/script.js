@@ -3,8 +3,9 @@ async function getFetch(element) {
     let result = await response.json();
     if (result.length) {
         result = result.slice(0, 3)
+        const link = element.querySelector('.offer-card__img-swipe')
         result.forEach(item => {
-            console.log(item.image_url)
+            element.querySelector('.offer-card__img-swipe').style.display = 'flex'
             let img = document.createElement('amp-img')
             img.setAttribute('src', item.image_url)
             img.setAttribute('layout', 'intrinsic')
@@ -12,7 +13,7 @@ async function getFetch(element) {
             img.setAttribute('height', '175')
             img.setAttribute('alt', 'before-after')
             img.classList.add('before-after')
-            element.target.appendChild(img)
+            element.target.insertBefore(img, link)
         })
     }
     // let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
