@@ -4,8 +4,14 @@ async function getFetch(element) {
     if (result.length) {
         result = result.slice(0, 3)
         result.forEach(item => {
+            console.log(item.image_url)
             let img = document.createElement('amp-img')
-            img.src = item.image_url
+            img.setAttribute('src', item.image_url)
+            img.setAttribute('layout', 'intrinsic')
+            img.setAttribute('width', '400')
+            img.setAttribute('height', '175')
+            img.setAttribute('alt', 'before-after')
+
             element.target.appendChild(img)
         })
     }
