@@ -4,7 +4,7 @@ async function getFetch(element) {
     if (result.length) {
         result = result.slice(0, 3)
         result.forEach(item => {
-            let img = document.createElement('img')
+            let img = document.createElement('amp-img')
             img.src = item.image_url
             element.target.appendChild(img)
         })
@@ -16,7 +16,7 @@ async function getFetch(element) {
     //     .then((data) => {
     //         console.log(data);
     //     });
-    return res;
+    // return res;
 }
 function debounce(func, timeout = 300){
     let timer;
