@@ -17,7 +17,7 @@ function debounce(func, timeout = 300){
     };
   }
 function getPhotos (element) {
-    debounce(getFetch)
+    getFetch()
     console.log(element)
     element.target.removeEventListener('scroll', getPhotos)
 }
