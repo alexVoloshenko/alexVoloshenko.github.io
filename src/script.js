@@ -11,8 +11,7 @@ async function getFetch(element) {
             img.setAttribute('width', '400')
             img.setAttribute('height', '175')
             img.setAttribute('alt', 'before-after')
-
-            element.target.appendChild(img)
+            img.classList.add('before-after')
         })
     }
     // let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
