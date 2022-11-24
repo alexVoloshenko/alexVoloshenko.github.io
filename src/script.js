@@ -1,11 +1,21 @@
-function getFetch(url) {
-    let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
-        .then((response) => {
-            return response.json();
+async function getFetch(element) {
+    const response = await fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
+    const result = await response.json();
+    if (result.length) {
+        result = result.slice(0, 3)
+        result.forEach(item => {
+            let img = document.createElement('img')
+            img.src = item.image_url
+            element.appendChild(img)
         })
-        .then((data) => {
-            console.log(data);
-        });
+    }
+    // let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
+    //     .then((response) => {
+    //         return response.json();
+    //     })
+    //     .then((data) => {
+    //         console.log(data);
+    //     });
     return res;
 }
 function debounce(func, timeout = 300){
@@ -16,7 +26,7 @@ function debounce(func, timeout = 300){
     };
   }
 function getPhotos (element) {
-    getFetch()
+    getFetch(element)
     console.log(element)
     element.target.removeEventListener('scroll', getPhotos)
 }
