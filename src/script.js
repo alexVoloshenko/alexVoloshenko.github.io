@@ -17,9 +17,7 @@ function debounce(func, timeout = 300){
   }
 const containers = document.getElementsByClassName('offer-card__img-container--test')
 containers.forEach(element => {
-    element.addEventListener('scroll', debounce(function(){
-        console.log("scroll")
-    }))
+    element.addEventListener('scroll', debounce(getFetch))
 });
 // containers.addEventListener('scroll', function(){
 //     console.log("here")
