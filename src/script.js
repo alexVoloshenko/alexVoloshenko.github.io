@@ -1,5 +1,5 @@
 function getFetch(url) {
-    let res = fetch(url)
+    let res = fetch('https://site.bookimed.com/widget/before-after-operation/clinic/1169?lang=en')
         .then((response) => {
             return response.json();
         })
