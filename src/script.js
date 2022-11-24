@@ -3,7 +3,7 @@ async function getFetch(element) {
     let result = await response.json();
     if (result.length) {
         result = result.slice(0, 3)
-        const link = element.target.querySelector('.offer-card__img-swipe')
+        const link = element.target.querySelector('.offer-card__img-more')
         result.forEach(item => {
             element.target.querySelector('.offer-card__img-swipe').style.display = 'flex'
             let img = document.createElement('amp-img')
