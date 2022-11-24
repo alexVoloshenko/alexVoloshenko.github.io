@@ -8,11 +8,18 @@ function getFetch(url) {
         });
     return res;
 }
+function debounce(func, timeout = 300){
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+  }
 const containers = document.getElementsByClassName('offer-card__img-container--test')
 containers.forEach(element => {
-    element.addEventListener('scroll', function(){
+    element.addEventListener('scroll', debounce(function(){
         console.log("scroll")
-    })
+    }))
 });
 // containers.addEventListener('scroll', function(){
 //     console.log("here")
