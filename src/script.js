@@ -6,6 +6,7 @@ function getFetch(url) {
         .then((data) => {
             console.log(data);
         });
+        element
     return res;
 }
 function debounce(func, timeout = 300){
@@ -15,9 +16,13 @@ function debounce(func, timeout = 300){
       timer = setTimeout(() => { func.apply(this, args); }, timeout);
     };
   }
+function getPhotos (element) {
+    debounce(getFetch(element))
+    element.removeEventListener('scroll', getPhotos)
+}
 const containers = document.getElementsByClassName('offer-card__img-container--test')
 containers.forEach(element => {
-    element.addEventListener('scroll', debounce(getFetch))
+    element.addEventListener('scroll', getPhotos)
 });
 // containers.addEventListener('scroll', function(){
 //     console.log("here")
