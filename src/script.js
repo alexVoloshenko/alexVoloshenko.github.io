@@ -1,1 +1,2 @@
-console.log('here')
+let script = document.querySelectorAll('.amp-script')
+console.log(script)
