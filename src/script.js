@@ -1,8 +1,5 @@
-let script = document.querySelectorAll('.amp-script')
-console.log(script)
-const button  = document.querySelector('.button')
-button.addEventListener('click', (e)=> {
-    const text = document.querySelector('.text')
-    text.style.display = 'unset'
-    e.target.style.display = 'none'
-})
+console.log("here amp script");
+const button = document.querySelector(".cookie-button__btn");
+button.addEventListener("click", (e) => {
+	window.location.href = window.location.href.replace("/m", "");
+});
